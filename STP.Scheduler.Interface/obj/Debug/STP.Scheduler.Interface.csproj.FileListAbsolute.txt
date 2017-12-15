@@ -1,0 +1,5 @@
+C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler.Interface\bin\Debug\STP.Scheduler.Interface.dll
+C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler.Interface\bin\Debug\STP.Scheduler.Interface.pdb
+C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler.Interface\obj\Debug\STP.Scheduler.Interface.csproj.CoreCompileInputs.cache
+C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler.Interface\obj\Debug\STP.Scheduler.Interface.dll
+C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler.Interface\obj\Debug\STP.Scheduler.Interface.pdb

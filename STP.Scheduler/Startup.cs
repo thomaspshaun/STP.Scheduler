@@ -2,9 +2,14 @@
 using Hangfire.MySql;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using STP.Scheduler.Classes;
+using STP.Scheduler.Infrastructure.Factories;
+using STP.Scheduler.Infrastructure.Repo;
+using STP.Scheduler.Interface.Contracts;
+using STP.Scheduler.Middleware;
+using STP.Scheduler.Services;
 using Swashbuckle.AspNetCore.Swagger;
 using System;
 
@@ -33,6 +38,7 @@ namespace STP.Scheduler
     {
 
       services.AddMvc();
+
       services.AddSwaggerGen(c =>
       {
         c.SwaggerDoc(
@@ -50,19 +56,32 @@ namespace STP.Scheduler
         x.UseStorage(new MySqlStorage(Configuration.GetConnectionString("hangfire")));
       });
 
-     
+
+      //services.AddSingleton<IJobService, JobService>();
+      //services.AddSingleton<IJobRepo, JobRepo>();
+
+      services.AddSingleton<IJobService, JobService>();
+      services.AddSingleton<IJobRepo, JobRepo>();
+
+
+      services.AddSingleton<IHttpClientRepo, HttpClientRepo>();
+      services.AddSingleton<IHttpClientFactory, HttpClientFactory>();
+
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
     public void Configure(IApplicationBuilder app, IHostingEnvironment env)
     {
-      app.UseSwagger();
+      app.UseMiddleware<ExceptionHandleMiddleware>();
 
+      app.UseMvc();
+
+      app.UseSwagger();
 
       // Enable middleware to serve swagger-ui (HTML, JS, CSS etc.), specifying the Swagger JSON endpoint.
       app.UseSwaggerUI(c =>
       {
-        c.SwaggerEndpoint("/swagger/version 1.0/swagger.json", "Refunds Orchestrator Service Version 1.0");
+        c.SwaggerEndpoint("/swagger/version 1.0/swagger.json", "Scheduler Service Version 1.0");
       });
 
 

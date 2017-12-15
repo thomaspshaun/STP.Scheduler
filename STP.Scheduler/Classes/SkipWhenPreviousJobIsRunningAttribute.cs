@@ -5,7 +5,7 @@ using Hangfire.Storage;
 using System;
 using System.Collections.Generic;
 
-namespace STP.Scheduler
+namespace STP.Scheduler.Classes
 {
   public class SkipWhenPreviousJobIsRunningAttribute : JobFilterAttribute, IClientFilter, IApplyStateFilter
   {

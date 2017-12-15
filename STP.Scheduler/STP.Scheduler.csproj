@@ -9,11 +9,30 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="nlog.config" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="HangFire" Version="1.6.17" />
     <PackageReference Include="Hangfire.MySql.NetCore" Version="1.0.7" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.1" />
+    <PackageReference Include="NLog" Version="5.0.0-beta11" />
+    <PackageReference Include="NLog.Config" Version="4.5.0-rc03" />
+    <PackageReference Include="NLog.MailKit" Version="2.1.0" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.5.0-rc2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\STP.Scheduler.Infrastructure\STP.Scheduler.Infrastructure.csproj" />
+    <ProjectReference Include="..\STP.Scheduler.Interface\STP.Scheduler.Interface.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="nlog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 ﻿using Hangfire.Dashboard;
 
-namespace STP.Scheduler
+namespace STP.Scheduler.Classes
 {
   public class HangfireAuthorizationFilter : IDashboardAuthorizationFilter
   {

@@ -9,11 +9,17 @@ C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler\STP.Scheduler\obj\Debug\netcoreapp2.
 C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler\STP.Scheduler\bin\Debug\netcoreapp2.0\STP.Scheduler.pdb
 C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler\STP.Scheduler\obj\Debug\netcoreapp2.0\STP.Scheduler.dll
 C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler\STP.Scheduler\obj\Debug\netcoreapp2.0\STP.Scheduler.pdb
+C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler\bin\Debug\netcoreapp2.0\nlog.config
 C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler\bin\Debug\netcoreapp2.0\STP.Scheduler.deps.json
 C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler\bin\Debug\netcoreapp2.0\STP.Scheduler.runtimeconfig.json
 C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler\bin\Debug\netcoreapp2.0\STP.Scheduler.runtimeconfig.dev.json
 C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler\bin\Debug\netcoreapp2.0\STP.Scheduler.dll
 C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler\bin\Debug\netcoreapp2.0\STP.Scheduler.pdb
+C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler\bin\Debug\netcoreapp2.0\STP.Scheduler.Infrastructure.dll
+C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler\bin\Debug\netcoreapp2.0\STP.Scheduler.Interface.dll
+C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler\bin\Debug\netcoreapp2.0\STP.Scheduler.Infrastructure.pdb
+C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler\bin\Debug\netcoreapp2.0\STP.Scheduler.Infrastructure.dll.config
+C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler\bin\Debug\netcoreapp2.0\STP.Scheduler.Interface.pdb
 C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler\obj\Debug\netcoreapp2.0\STP.Scheduler.csprojResolveAssemblyReference.cache
 C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler\obj\Debug\netcoreapp2.0\STP.Scheduler.csproj.CoreCompileInputs.cache
 C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler\obj\Debug\netcoreapp2.0\STP.Scheduler.AssemblyInfoInputs.cache
