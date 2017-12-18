@@ -97,7 +97,7 @@ namespace STP.Scheduler
           {
             WorkerCount = 1,
             ServerName = "STP.Scheduler:" + Environment.MachineName,
-            Queues = new[] { "Monthly", "Weekly", "Daily", "Hourly" }
+            Queues = new[] { "monthly", "weekly", "daily", "hourly" }
           });
 
       app.UseHangfireDashboard("/scheduler", options);

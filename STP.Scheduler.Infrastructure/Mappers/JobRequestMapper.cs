@@ -9,7 +9,7 @@ namespace STP.Scheduler.Infrastructure.Mappers
     {
       return new JobRequest()
       {
-        JobName = "DailyJob_"+request.Controller + "_" + request.Action+"_"+"D0"+"H"+request.Hour+"M"+request.Minute,
+        JobName = "daily_"+request.Controller + "_" + request.Action+"_"+"d0"+"h"+request.Hour+"m"+request.Minute,
         Action = request.Action,
         Controller = request.Controller,
         Day = 0,
@@ -23,7 +23,7 @@ namespace STP.Scheduler.Infrastructure.Mappers
     {
       return new JobRequest()
       {
-        JobName = request.Controller + "_" + request.Action + "_" + "D"+ request.Day + "H" + request.Hour + "M" + request.Minute,
+        JobName = "weekly_"+request.Controller + "_" + request.Action + "_" + "d"+ request.Day + "h" + request.Hour + "m" + request.Minute,
         Action = request.Action,
         Controller = request.Controller,
         Day = request.Day,
@@ -38,7 +38,7 @@ namespace STP.Scheduler.Infrastructure.Mappers
     {
       return new JobRequest()
       {
-        JobName = request.Controller + "_" + request.Action + "_" + "D0" + "H0" + "M" + request.Minute,
+        JobName = "hourly_"+request.Controller + "_" + request.Action + "_" + "d0" + "h0" + "m" + request.Minute,
 
         Action = request.Action,
         Controller = request.Controller,
@@ -55,7 +55,7 @@ namespace STP.Scheduler.Infrastructure.Mappers
     {
       return new JobRequest()
       {
-        JobName = request.Controller + "_" + request.Action + "_" + "D0" + "H" + request.Hour + "M" + request.Minute,
+        JobName = "monthly_"+request.Controller + "_" + request.Action + "_" + "d0" + "h" + request.Hour + "m" + request.Minute,
 
         Action = request.Action,
         Controller = request.Controller,

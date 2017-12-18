@@ -17,28 +17,28 @@ namespace STP.Scheduler.Controllers
 
     [HttpPost]
     [Route("CreateADailyJob")]
-    public void CreateADailyJob([FromBody]DailyJobRequest dailyJobRequest)
+    public JobReponse CreateADailyJob([FromBody]DailyJobRequest dailyJobRequest)
     {
-      _jobService.CreateDailyJob(dailyJobRequest); 
+      return _jobService.CreateDailyJob(dailyJobRequest); 
     }
 
     [HttpPost]
     [Route("CreateAHourlyJob")]
-    public void CreateAHourlyJob([FromBody]HourlyJobRequest dailyJobRequest)
+    public JobReponse CreateAHourlyJob([FromBody]HourlyJobRequest dailyJobRequest)
     {
-      _jobService.CreateHourlyJob(dailyJobRequest);
+      return _jobService.CreateHourlyJob(dailyJobRequest);
     }
     [HttpPost]
     [Route("CreateAMonthlyJob")]
-    public void CreateAMonthlyJob([FromBody]MonthlyJobRequest dailyJobRequest)
+    public JobReponse CreateAMonthlyJob([FromBody]MonthlyJobRequest dailyJobRequest)
     {
-      _jobService.CreateMonthlyJob(dailyJobRequest);
+      return _jobService.CreateMonthlyJob(dailyJobRequest);
     }
     [HttpPost]
     [Route("CreateAWeeklyJob")]
-    public void CreateAWeeklyJob([FromBody]WeeklyJobRequest dailyJobRequest)
+    public JobReponse CreateAWeeklyJob([FromBody]WeeklyJobRequest dailyJobRequest)
     {
-      _jobService.CreateWeeklyJob(dailyJobRequest);
+      return _jobService.CreateWeeklyJob(dailyJobRequest);
     }
   }
 }

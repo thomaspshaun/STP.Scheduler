@@ -25,11 +25,11 @@ namespace STP.Scheduler.Services
 
       if (!DoesJobExist(jobRequest.JobName))
       {
-        RecurringJob.AddOrUpdate(recurringJobId: jobRequest.JobName,
+        RecurringJob.AddOrUpdate(recurringJobId: jobRequest.JobName.ToLower(),
                                  methodCall: () => _jobRepo.CallWebServiceMethod(jobRequest.ServiceUrl, jobRequest.Controller, jobRequest.Action),
                                  cronExpression: Cron.Daily(jobRequest.Hour, jobRequest.Minute),
                                  timeZone: null,
-                                 queue: "Daily"
+                                 queue: "daily"
                                 );
         response.Result = "Job Added";
       }
@@ -48,11 +48,11 @@ namespace STP.Scheduler.Services
       JobReponse response = new JobReponse();
       if (!DoesJobExist(jobRequest.JobName))
       {
-        RecurringJob.AddOrUpdate(recurringJobId: jobRequest.JobName,
+        RecurringJob.AddOrUpdate(recurringJobId: jobRequest.JobName.ToLower(),
                                  methodCall: () => _jobRepo.CallWebServiceMethod(jobRequest.ServiceUrl, jobRequest.Controller, jobRequest.Action),
                                  cronExpression: Cron.Hourly(jobRequest.Minute),
                                  timeZone: null,
-                                 queue: "Hourly"
+                                 queue: "hourly"
                            );
         response.Result = "Job Added";
       }
@@ -70,11 +70,11 @@ namespace STP.Scheduler.Services
       JobReponse response = new JobReponse();
       if (!DoesJobExist(jobRequest.JobName))
       {
-        RecurringJob.AddOrUpdate(recurringJobId: jobRequest.JobName,
+        RecurringJob.AddOrUpdate(recurringJobId: jobRequest.JobName.ToLower(),
                                  methodCall: () => _jobRepo.CallWebServiceMethod(jobRequest.ServiceUrl, jobRequest.Controller, jobRequest.Action),
                                  cronExpression: Cron.Monthly((int)jobRequest.Day, jobRequest.Hour, jobRequest.Minute),
                                  timeZone: null,
-                                 queue: "Monthly"
+                                 queue: "monthly"
                               );
         response.Result = "Job Added";
       }
@@ -92,11 +92,11 @@ namespace STP.Scheduler.Services
       JobReponse response = new JobReponse();
       if (!DoesJobExist(jobRequest.JobName))
       {
-        RecurringJob.AddOrUpdate(recurringJobId: jobRequest.JobName,
+        RecurringJob.AddOrUpdate(recurringJobId: jobRequest.JobName.ToLower(),
                                  methodCall: () => _jobRepo.CallWebServiceMethod(jobRequest.ServiceUrl, jobRequest.Controller, jobRequest.Action),
                                  cronExpression: Cron.Weekly(jobRequest.Day, jobRequest.Hour, jobRequest.Minute),
                                  timeZone: null,
-                                 queue: "Weekly"
+                                 queue: "weekly"
                         );
         response.Result = "Job Added";
       }
