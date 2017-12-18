@@ -26,3 +26,5 @@ C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler\obj\Debug\netcoreapp2.0\STP.Schedule
 C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler\obj\Debug\netcoreapp2.0\STP.Scheduler.AssemblyInfo.cs
 C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler\obj\Debug\netcoreapp2.0\STP.Scheduler.dll
 C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler\obj\Debug\netcoreapp2.0\STP.Scheduler.pdb
+C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler\bin\Debug\netcoreapp2.0\STP.Scheduler.Domain.dll
+C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler\bin\Debug\netcoreapp2.0\STP.Scheduler.Domain.pdb

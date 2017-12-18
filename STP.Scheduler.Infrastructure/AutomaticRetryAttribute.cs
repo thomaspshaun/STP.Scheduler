@@ -101,9 +101,9 @@ namespace STP.Scheduler.Infrastructure
       {
         if (LogEvents)
         {
-          Logger.ErrorException(
-              $"Failed to process the job '{context.BackgroundJob.Id}': an exception occurred.",
-              failedState.Exception);
+          Logger.Error(failedState.Exception,
+              $"Failed to process the job '{context.BackgroundJob.Id}': an exception occurred."
+             );
         }
       }
     }
@@ -158,9 +158,9 @@ namespace STP.Scheduler.Infrastructure
 
      if (LogEvents)
       {
-        Logger.WarnException(
-                  $"Failed to process the job '{context.BackgroundJob.Id}': an exception occurred. Retry attempt {retryAttempt} of {Attempts} will be performed in {delay}.",
-                  failedState.Exception);
+        Logger.Error( failedState.Exception,
+                  $"Failed to process the job '{context.BackgroundJob.Id}': an exception occurred. Retry attempt {retryAttempt} of {Attempts} will be performed in {delay}."
+                 );
       }
     }
 
@@ -183,9 +183,9 @@ namespace STP.Scheduler.Infrastructure
 
       if (LogEvents)
       {
-        Logger.WarnException(
-                    $"Failed to process the job '{context.BackgroundJob.Id}': an exception occured. Job was automatically deleted because the retry attempt count exceeded {Attempts}.",
-                    failedState.Exception);
+        Logger.Error(failedState.Exception,
+                    $"Failed to process the job '{context.BackgroundJob.Id}': an exception occured. Job was automatically deleted because the retry attempt count exceeded {Attempts}."
+                    );
       }
     }
 

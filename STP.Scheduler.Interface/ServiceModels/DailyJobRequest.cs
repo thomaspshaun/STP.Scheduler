@@ -1,17 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace STP.Scheduler.Interface.ServiceModels
 {
   public class DailyJobRequest
   {
-    public string JobName { get; set; }
-    public int HourOfDay { get; set; }
+    public int Hour { get; set; }
+    public int Minute { get; set; }
+    [Required]
     public string ServiceUrl { get; set; }
+    [Required]
     public string Controller { get; set; }
+    [Required]
     public string Action { get; set; }
   }
 }

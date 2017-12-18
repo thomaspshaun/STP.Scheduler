@@ -1,0 +1,9 @@
+C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler.Domain\bin\Debug\netstandard2.0\STP.Scheduler.Domain.deps.json
+C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler.Domain\bin\Debug\netstandard2.0\STP.Scheduler.Domain.dll
+C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler.Domain\bin\Debug\netstandard2.0\STP.Scheduler.Domain.pdb
+C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler.Domain\obj\Debug\netstandard2.0\STP.Scheduler.Domain.csprojResolveAssemblyReference.cache
+C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler.Domain\obj\Debug\netstandard2.0\STP.Scheduler.Domain.csproj.CoreCompileInputs.cache
+C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler.Domain\obj\Debug\netstandard2.0\STP.Scheduler.Domain.AssemblyInfoInputs.cache
+C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler.Domain\obj\Debug\netstandard2.0\STP.Scheduler.Domain.AssemblyInfo.cs
+C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler.Domain\obj\Debug\netstandard2.0\STP.Scheduler.Domain.dll
+C:\Shaun\GITHUB\STP.Scheduler\STP.Scheduler.Domain\obj\Debug\netstandard2.0\STP.Scheduler.Domain.pdb

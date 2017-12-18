@@ -4,6 +4,9 @@ namespace STP.Scheduler.Interface.Contracts
 {
   public interface IJobService
   {
-    void CreateDailyJob(DailyJobRequest dailyJobRequest); 
+    JobReponse CreateDailyJob(DailyJobRequest dailyJobRequest);
+    JobReponse CreateHourlyJob(HourlyJobRequest dailyJobRequest);
+    JobReponse CreateMonthlyJob(MonthlyJobRequest dailyJobRequest);
+    JobReponse CreateWeeklyJob(WeeklyJobRequest dailyJobRequest); 
   }
 }

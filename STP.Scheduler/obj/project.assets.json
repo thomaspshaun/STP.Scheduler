@@ -5807,9 +5807,20 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
+      "STP.Scheduler.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/STP.Scheduler.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/STP.Scheduler.Domain.dll": {}
+        }
+      },
       "STP.Scheduler.Infrastructure/1.0.0": {
         "type": "project",
         "dependencies": {
+          "STP.Scheduler.Domain": "1.0.0",
           "STP.Scheduler.Interface": "1.0.0"
         },
         "compile": {
@@ -14932,6 +14943,11 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "STP.Scheduler.Domain/1.0.0": {
+      "type": "project",
+      "path": "../STP.Scheduler.Domain/STP.Scheduler.Domain.csproj",
+      "msbuildProject": "../STP.Scheduler.Domain/STP.Scheduler.Domain.csproj"
     },
     "STP.Scheduler.Infrastructure/1.0.0": {
       "type": "project",

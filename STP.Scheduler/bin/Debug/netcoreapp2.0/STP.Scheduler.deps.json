@@ -4725,8 +4725,17 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
+      "STP.Scheduler.Domain/1.0.0": {
+        "runtime": {
+          "STP.Scheduler.Domain.dll": {}
+        },
+        "compile": {
+          "STP.Scheduler.Domain.dll": {}
+        }
+      },
       "STP.Scheduler.Infrastructure/1.0.0": {
         "dependencies": {
+          "STP.Scheduler.Domain": "1.0.0",
           "STP.Scheduler.Interface": "1.0.0"
         },
         "runtime": {
@@ -7321,6 +7330,11 @@
       "sha512": "sha512-W6ZZ0/o7+3Qb77mRAQyLjPudHG3OMeeQ4p9yY13PUdJArmRCx2cLMm5F4tpIjJXxzHC0ew0oK7DMDGILMdfCnw==",
       "path": "windowsazure.storage/8.1.4",
       "hashPath": "windowsazure.storage.8.1.4.nupkg.sha512"
+    },
+    "STP.Scheduler.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "STP.Scheduler.Infrastructure/1.0.0": {
       "type": "project",

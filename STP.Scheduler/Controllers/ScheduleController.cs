@@ -21,5 +21,24 @@ namespace STP.Scheduler.Controllers
     {
       _jobService.CreateDailyJob(dailyJobRequest); 
     }
+
+    [HttpPost]
+    [Route("CreateAHourlyJob")]
+    public void CreateAHourlyJob([FromBody]HourlyJobRequest dailyJobRequest)
+    {
+      _jobService.CreateHourlyJob(dailyJobRequest);
+    }
+    [HttpPost]
+    [Route("CreateAMonthlyJob")]
+    public void CreateAMonthlyJob([FromBody]MonthlyJobRequest dailyJobRequest)
+    {
+      _jobService.CreateMonthlyJob(dailyJobRequest);
+    }
+    [HttpPost]
+    [Route("CreateAWeeklyJob")]
+    public void CreateAWeeklyJob([FromBody]WeeklyJobRequest dailyJobRequest)
+    {
+      _jobService.CreateWeeklyJob(dailyJobRequest);
+    }
   }
 }
